@@ -1,20 +1,20 @@
 # Seçtiğiniz sekmeleri günü gününe bir klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep selected tabs in a folder day by day
 
-<p align="left"> 
-    <a href="https://www.instagram.com/umutyalcine?igsh=c21xZ2psNG56cHN5" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-@umutyalcine-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @umutyalcine" />
-    </a>&nbsp;&nbsp; <a href="https://www.instagram.com/1yildapentesterolcam?igsh=MTU0dmRwbDNwMXlvcw==" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-@1yildapentesterolcam-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @1yildapentesterolcam" />
-    </a>&nbsp;&nbsp; <a href="https://open.substack.com/pub/abqlinux?utm_source=share&utm_medium=android&r=6dmoxh" target="_blank">
-        <img src="https://img.shields.io/badge/Substack-abqlinux-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack abqlinux" />
-    </a>&nbsp;&nbsp; <a href="https://1000kitap.com/Meineliebewittgenstein" target="_blank">
-        <img src="https://img.shields.io/badge/1000Kitap-Meineliebewittgenstein-795548?style=for-the-badge" alt="1000Kitap Meineliebewittgenstein" />
-    </a>
+<p align="left">
+    <a href="https://www.instagram.com/umutyalcine?igsh=c21xZ2psNG56cHN5" target="_blank"><img src="https://img.shields.io/badge/Instagram-@umutyalcine-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @umutyalcine" /></a><a href="https://www.instagram.com/1yildapentesterolcam?igsh=MTU0dmRwbDNwMXlvcw==" target="_blank"><img src="https://img.shields.io/badge/Instagram-@1yildapentesterolcam-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @1yildapentesterolcam" /></a><a href="https://open.substack.com/pub/abqlinux?utm_source=share&utm_medium=android&r=6dmoxh" target="_blank"><img src="https://img.shields.io/badge/Substack-abqlinux-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack abqlinux" /></a><a href="https://1000kitap.com/Meineliebewittgenstein" target="_blank"><img src="https://img.shields.io/badge/1000Kitap-Meineliebewittgenstein-795548?style=for-the-badge" alt="1000Kitap Meineliebewittgenstein" /></a>
 </p>
 
 ---
 
-## Seçtiğiniz sekmeleri günü gününe bir klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep selected tabs in a folder day by day
+## Eklenti ile alakalı ekran görüntüleri / Screenshots related to the extension
+
+<p align="center">
+    <img src="b1.png" alt="Link Arşivcisi Ana Ekranı: Kaydetme ve Geçmiş" width="250" style="margin: 5px;"/>
+    <img src="c1.png" alt="Link Arşivcisi Detay: Günlük Link Listesi" width="250" style="margin: 5px;"/>
+    <img src="d1.png" alt="Link Arşivcisi Hakkında ve Veri Yönetimi" width="250" style="margin: 5px;"/>
+</p>
+
+---
 
 ### 🚀 Proje Hakkında: Sekme Kaosuna Son! (TR)
 
@@ -43,30 +43,16 @@ This extension is an ideal productivity tool, especially for developers, researc
 ## 💻 Proje Teknolojileri: / Project Technologies:
 
 <p align="left">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/></a><a href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="visualstudio" width="40" height="40"/></a><a href="https://desktop.github.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github desktop" width="40" height="40"/></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/></a><a href="https://desktop.github.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github desktop" width="40" height="40"/></a>
 </p>
 
 ---
 
-## ⚙️ Kurulum / Installation
+## ℹ️ Ek Bilgiler / Additional Information
 
-### Manuel Kurulum (Sadece Geliştiriciler İçin) / Manual Installation (For Developers Only)
-
-1.  Bu depoyu (repository) yerel makinenize klonlayın:
-    `git clone [DEPO_ADRESINIZI_BURAYA_EKLEYIN]`
-2.  Chrome tarayıcınızda `chrome://extensions` adresine gidin.
-3.  Sağ üst köşedeki **Geliştirici modu**'nu (Developer mode) açın.
-4.  Sol üstteki **Paketi açılmış öğeyi yükle** (Load unpacked) butonuna tıklayın ve klonladığınız proje klasörünü seçin.
+* Eğer bir sayfayı kayıt dışı bırakmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
+* If you want to unregister (unsave) a page, simply click the save button again while on the same page.
 
 ---
 
-## 📸 Ekran Görüntüleri / Screenshots
-
-<p align="center">
-    <img src="placeholder-screenshot-1.png" alt="Eklenti Ana Ekranı" width="300" style="margin: 5px;"/>
-    <img src="placeholder-screenshot-2.png" alt="Arşivlenmiş Klasör Görünümü" width="300" style="margin: 5px;"/>
-</p>
-
----
-
-💡 **Eklenecekler / To Be Added**: Chrome Extensions sayfasına eklenecek ve link readme. dosyasına eklenecek.
+💡 Eklenecekler / To Be Added: Chrome Extensions sayfasına eklenecek ve link readme. dosyasına eklenecek. Eğer Web sayfasına yüklenmeden kullanmak istiyorsanız gerekli konfigürasyon ayarları ile yerel bir şekilde kullanabilirsiniz.
