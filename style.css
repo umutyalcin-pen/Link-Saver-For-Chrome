@@ -129,7 +129,7 @@ button {
   color: var(--text-secondary);
 }
 
-/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -147,7 +147,7 @@ button {
   background: #475569;
 }
 
-/* Detail View */
+
 .detail-view {
   position: absolute;
   top: 0;
@@ -276,7 +276,7 @@ button {
   color: var(--text-secondary);
 }
 
-/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -294,7 +294,7 @@ button {
   background: #475569;
 }
 
-/* Detail View */
+
 .detail-view {
   position: absolute;
   top: 0;
@@ -413,7 +413,7 @@ button {
   padding-left: 4px;
 }
 
-/* Modal Styles */
+
 .modal {
   position: absolute;
   top: 0;
@@ -506,4 +506,5 @@ button {
 
 .github-btn:hover {
   background-color: #2f363d;
+
 }
