@@ -16,27 +16,27 @@
 
 ---
 
-### Proje Hakkında: Sekme Kaosuna Son! (TR)
+### Proje Hakkında (TR)
 
-Yoğun çalıştığınız veya araştırma yaptığınız günlerde, tarayıcınız yüzlerce sekmeyle dolup taşabilir. **Günübirlik Sekme Arşivleyici** eklentisi, bu dağınıklığa pratik bir çözüm sunar.
+Araştırma yaparken veya çalışırken açık kalan düzinelerce sekme hem bilgisayarı yavaşlatır hem de dikkat dağıtır. Günübirlik Sekme Arşivleyici, açık olan sekmelerinizi tek bir tıklamayla o günün tarihiyle yer imlerinize (bookmark) kaydeder ve sekmeleri kapatarak tarayıcınızı rahatlatır.
 
-* **Tek Tıkla Arşivleme:** Seçtiğiniz tüm sekmeleri, o günün tarihini taşıyan otomatik bir yer imi klasörüne taşır. (Örn: `2025-12-01 Arşivi`)
-* **Odaklanma:** Gereksiz sekmeleri tek bir hareketle kapatarak tarayıcı performansınızı artırır ve dikkatinizi toplamanızı sağlar.
-* **Zaman Yolculuğu:** Birkaç gün sonra aradığınız kaynağın hangi güne ait olduğunu kolayca bulabilirsiniz.
+* **Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi günlük klasörler halinde gruplar.
+* **Performans Artışı:** Arşivlenen sekmeleri otomatik kapatarak RAM kullanımını azaltır.
+* **Kolay Geri Dönüş:** Günler sonra bile hangi gün hangi kaynakları incelediğinizi geçmiş klasöründen bulabilirsiniz.
 
-Bu eklenti, özellikle yazılımcılar, araştırmacılar, öğrenciler ve çoklu görevler yürüten herkes için ideal bir üretkenlik aracıdır.
+Özellikle çok fazla sekmeyle çalışan yazılımcılar, öğrenciler ve araştırmacılar için geliştirilmiş pratik bir verimlilik aracıdır.
 
 ---
 
-### About the Project: End of Tab Clutter! (EN)
+### About the Project (EN)
 
-When you're deeply involved in work or research, your browser can easily become overwhelmed with hundreds of tabs. The **Daily Tab Archiver** extension offers a practical solution to this clutter.
+Having dozens of open tabs during research or coding drags down system performance and causes clutter. Daily Tab Archiver saves your open tabs into a dated bookmark folder with a single click, then closes them to free up memory.
 
-* **One-Click Archiving:** Moves all your selected tabs into an automated bookmark folder named with the current day's date. (E.g., `2025-12-01 Archive`)
-* **Focus:** It boosts browser performance and helps you maintain focus by closing unnecessary tabs in one go.
-* **Time Travel:** You can easily find which day a specific resource you're looking for was opened, days later.
+* **Dated Archives:** Organizes tabs into daily folders like `2025-12-01 Archive`.
+* **Resource Friendly:** Closes archived tabs instantly to free up RAM.
+* **Easy Retrieval:** Quickly find which resources you were reading on a specific day, even weeks later.
 
-This extension is an ideal productivity tool, especially for developers, researchers, students, and anyone juggling multiple tasks.
+A lightweight productivity tool built for developers, students, and researchers who juggle multiple tabs.
 
 ---
 
