@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const dates = Object.keys(items).sort().reverse(); 
 
       if (dates.length === 0) {
-        folderList.innerHTML = '<div style="text-align:center; color: var(--text-secondary); padding: 20px;">No links saved yet.</div>';
+        folderList.innerHTML = '<div style="text-align:center; color: var(--text-primary); padding: 20px;">No links saved yet.</div>';
         return;
       }
 

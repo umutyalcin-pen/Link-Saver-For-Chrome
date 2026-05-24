@@ -82,7 +82,7 @@ button {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
