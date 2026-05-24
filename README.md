@@ -1,4 +1,4 @@
-# Seçtiğiniz sekmeleri günü gününe bir klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep selected tabs in a folder day by day
+# Seçtiğiniz sekmeleri düzenli bir şekilde klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep selected tabs in a folder day by day
 
 <p align="left">
     <a href="https://www.instagram.com/umutyalcine?igsh=c21xZ2psNG56cHN5" target="_blank"><img src="https://img.shields.io/badge/Instagram-@umutyalcine-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @umutyalcine" /></a><a href="https://www.instagram.com/1yildapentesterolcam?igsh=MTU0dmRwbDNwMXlvcw==" target="_blank"><img src="https://img.shields.io/badge/Instagram-@1yildapentesterolcam-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @1yildapentesterolcam" /></a><a href="https://open.substack.com/pub/abqlinux?utm_source=share&utm_medium=android&r=6dmoxh" target="_blank"><img src="https://img.shields.io/badge/Substack-abqlinux-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack abqlinux" /></a><a href="https://1000kitap.com/Meineliebewittgenstein" target="_blank"><img src="https://img.shields.io/badge/1000Kitap-Meineliebewittgenstein-795548?style=for-the-badge" alt="1000Kitap Meineliebewittgenstein" /></a>
@@ -16,19 +16,19 @@
 
 ---
 
-### Proje Hakkında (TR)
+### Proje Hakkında 
 
-Araştırma yaparken veya çalışırken açık kalan düzinelerce sekme hem bilgisayarı yavaşlatır hem de dikkat dağıtır. Günübirlik Sekme Arşivleyici, açık olan sekmelerinizi tek bir tıklamayla o günün tarihiyle yer imlerinize (bookmark) kaydeder ve sekmeleri kapatarak tarayıcınızı rahatlatır.
+Araştırma yaparken veya çalışırken açık kalan sekmeler bilgisayarı yavaşlatır. Bu eklenti açık olan sekmelerinizi tek bir tıklamayla o günün tarihiyle yer imlerinize kaydeder ve sekmeleri kapatarak sistemin az kaynak kullanmasını sağlar.
 
-* **Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi günlük klasörler halinde gruplar.
+* **Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi klasörler halinde gruplar.
 * **Performans Artışı:** Arşivlenen sekmeleri otomatik kapatarak RAM kullanımını azaltır.
 * **Kolay Geri Dönüş:** Günler sonra bile hangi gün hangi kaynakları incelediğinizi geçmiş klasöründen bulabilirsiniz.
 
-Özellikle çok fazla sekmeyle çalışan yazılımcılar, öğrenciler ve araştırmacılar için geliştirilmiş pratik bir verimlilik aracıdır.
+Özellikle çok fazla sekmeyle çalışanlar için çok işe yarayacak birr eklentidir.
 
 ---
 
-### About the Project (EN)
+### About the Project 
 
 Having dozens of open tabs during research or coding drags down system performance and causes clutter. Daily Tab Archiver saves your open tabs into a dated bookmark folder with a single click, then closes them to free up memory.
 
@@ -49,9 +49,9 @@ A lightweight productivity tool built for developers, students, and researchers 
 ---
 ## Ek Bilgiler / Additional Information
 
-* Eğer bir sayfayı kayıt dışı bırakmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
-* If you want to unregister (unsave) a page, simply click the save button again while on the same page.
+* Eğer bir sayfayı kaydetten çıkarmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
+* If you want to unsave page, simply click the save button again while on the same page.
 
 ---
 
-Eklenecekler / To Be Added: Chrome Extensions sayfasına eklenecek ve link readme. dosyasına eklenecek. Eğer Web sayfasına yüklenmeden kullanmak istiyorsanız gerekli konfigürasyon ayarları ile yerel bir şekilde kullanabilirsiniz.
+Eklenecekler / To Be Added: Chrome Extensions sayfasına eklenecek ve link readme. dosyasına eklenecek. Eğer Web sayfasına yüklenmeden kullanmak istiyorsanız gerekli ayarlar ile yerel bir şekilde kullanabilirsiniz.
