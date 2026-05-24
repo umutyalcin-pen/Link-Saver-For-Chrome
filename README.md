@@ -1,4 +1,4 @@
-# Seçtiğiniz sekmeleri düzenli bir şekilde klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep selected tabs in a folder day by day
+# Seçtiğiniz sekmeleri düzenli bir şekilde klasörde tutmak için Chrome Web eklentisi / Chrome Web extension to keep your selected tabs organized in a folder
 
 <p align="left">
     <a href="https://www.instagram.com/umutyalcine?igsh=c21xZ2psNG56cHN5" target="_blank"><img src="https://img.shields.io/badge/Instagram-@umutyalcine-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @umutyalcine" /></a><a href="https://www.instagram.com/1yildapentesterolcam?igsh=MTU0dmRwbDNwMXlvcw==" target="_blank"><img src="https://img.shields.io/badge/Instagram-@1yildapentesterolcam-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram @1yildapentesterolcam" /></a><a href="https://open.substack.com/pub/abqlinux?utm_source=share&utm_medium=android&r=6dmoxh" target="_blank"><img src="https://img.shields.io/badge/Substack-abqlinux-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack abqlinux" /></a><a href="https://1000kitap.com/Meineliebewittgenstein" target="_blank"><img src="https://img.shields.io/badge/1000Kitap-Meineliebewittgenstein-795548?style=for-the-badge" alt="1000Kitap Meineliebewittgenstein" /></a>
@@ -30,13 +30,13 @@ Araştırma yaparken veya çalışırken açık kalan sekmeler bilgisayarı yava
 
 ### About the Project 
 
-Having dozens of open tabs during research or coding drags down system performance and causes clutter. Daily Tab Archiver saves your open tabs into a dated bookmark folder with a single click, then closes them to free up memory.
+Open tabs while researching or working slow down the computer. This extension saves your open tabs into your bookmarks with the current day's date with a single click, and closes the tabs to ensure the system uses fewer resources.
 
-* **Dated Archives:** Organizes tabs into daily folders like `2025-12-01 Archive`.
+* **Dated Archives:** Organizes tabs into folders like `2025-12-01 Archive`.
 * **Resource Friendly:** Closes archived tabs instantly to free up RAM.
 * **Easy Retrieval:** Quickly find which resources you were reading on a specific day, even weeks later.
 
-A lightweight productivity tool built for developers, students, and researchers who juggle multiple tabs.
+It is a highly useful extension, especially for those who work with too many tabs.
 
 ---
 
@@ -50,8 +50,8 @@ A lightweight productivity tool built for developers, students, and researchers 
 ## Ek Bilgiler / Additional Information
 
 * Eğer bir sayfayı kaydetten çıkarmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
-* If you want to unsave page, simply click the save button again while on the same page.
+* If you want to unsave a page, simply click the save button again while on the same page.
 
 ---
 
-Eklenecekler / To Be Added: Chrome Extensions sayfasına eklenecek ve link readme. dosyasına eklenecek. Eğer Web sayfasına yüklenmeden kullanmak istiyorsanız gerekli ayarlar ile yerel bir şekilde kullanabilirsiniz.
+Eklenecekler / To Be Added: Chrome Web Mağazasına eklenecek ve link buradaki README dosyasına eklenecek. Eğer mağazaya yüklenmeden kullanmak istiyorsanız, gerekli ayarlar ile yerel olarak kullanabilirsiniz. / Will be added to the Chrome Web Store, and the link will be added to this README file. If you want to use it without store installation, you can run it locally with the necessary settings.
