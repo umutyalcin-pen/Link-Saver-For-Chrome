@@ -58,6 +58,34 @@ document.addEventListener('DOMContentLoaded', () => {
     importFile.click();
   });
 
+  function validateImportData(data) {
+    if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+      return false;
+    }
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    for (const date in data) {
+      if (!dateRegex.test(date)) {
+        return false;
+      }
+      const links = data[date];
+      if (!Array.isArray(links)) {
+        return false;
+      }
+      for (const link of links) {
+        if (typeof link !== 'object' || link === null) {
+          return false;
+        }
+        if (typeof link.title !== 'string' || typeof link.url !== 'string') {
+          return false;
+        }
+        if (link.timestamp && typeof link.timestamp !== 'number') {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
   importFile.addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -66,6 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
     reader.onload = (event) => {
       try {
         const data = JSON.parse(event.target.result);
+        if (!validateImportData(data)) {
+          alert('Dosya formatı hatalı veya geçersiz veri içeriyor!');
+          return;
+        }
         chrome.storage.local.set(data, () => {
           loadFolders(); 
           alert('Veriler başarıyla yüklendi!');
@@ -77,6 +109,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     reader.readAsText(file);
   });
+
+  function showButtonFeedback(button, text, background) {
+    const originalText = button.innerHTML;
+    const originalBackground = button.style.background;
+    button.innerHTML = text;
+    button.style.background = background;
+    button.disabled = true;
+
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      button.style.background = originalBackground;
+      button.disabled = false;
+    }, 1500);
+  }
 
   saveBtn.addEventListener('click', async () => {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -95,47 +141,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const existingLinkIndex = currentLinks.findIndex(link => link.url === linkData.url);
 
       if (existingLinkIndex === -1) {
-       
         const updatedLinks = [...currentLinks, linkData];
         chrome.storage.local.set({ [today]: updatedLinks }, () => {
           loadFolders(); 
-          
-          const originalText = saveBtn.innerHTML;
-          saveBtn.innerHTML = 'Kaydedildi!';
-          saveBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-          setTimeout(() => {
-            saveBtn.innerHTML = originalText;
-            saveBtn.style.background = '';
-          }, 1500);
+          showButtonFeedback(saveBtn, 'Kaydedildi!', 'linear-gradient(135deg, #10b981, #059669)');
         });
       } else {
-        
         const updatedLinks = currentLinks.filter(link => link.url !== linkData.url);
 
-        
         if (updatedLinks.length === 0) {
           chrome.storage.local.remove(today, () => {
             loadFolders();
-            
-            const originalText = saveBtn.innerHTML;
-            saveBtn.innerHTML = 'Kaydetme İptal';
-            saveBtn.style.background = 'linear-gradient(135deg, #ef4444, #b91c1c)'; 
-            setTimeout(() => {
-              saveBtn.innerHTML = originalText;
-              saveBtn.style.background = '';
-            }, 1500);
+            showButtonFeedback(saveBtn, 'Kaydetme İptal', 'linear-gradient(135deg, #ef4444, #b91c1c)');
           });
         } else {
           chrome.storage.local.set({ [today]: updatedLinks }, () => {
             loadFolders();
-            
-            const originalText = saveBtn.innerHTML;
-            saveBtn.innerHTML = 'Kaydetme İptal';
-            saveBtn.style.background = 'linear-gradient(135deg, #ef4444, #b91c1c)'; 
-            setTimeout(() => {
-              saveBtn.innerHTML = originalText;
-              saveBtn.style.background = '';
-            }, 1500);
+            showButtonFeedback(saveBtn, 'Kaydetme İptal', 'linear-gradient(135deg, #ef4444, #b91c1c)');
           });
         }
       }
@@ -199,7 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
     detailTitle.textContent = formatDate(date);
     linkList.innerHTML = '';
 
-    
     const groups = {};
     links.forEach(link => {
       let domain;
@@ -214,33 +235,59 @@ document.addEventListener('DOMContentLoaded', () => {
       groups[domain].push(link);
     });
 
-    
     const sortedDomains = Object.keys(groups).sort();
 
     sortedDomains.forEach(domain => {
-      
       const groupHeader = document.createElement('div');
       groupHeader.className = 'group-header';
       groupHeader.textContent = domain;
       linkList.appendChild(groupHeader);
 
-      
       groups[domain].forEach(link => {
         const linkItem = document.createElement('a');
         linkItem.className = 'link-item';
-        linkItem.href = link.url;
+        
+        let safeUrl = '#';
+        try {
+          const parsedUrl = new URL(link.url);
+          if (parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:') {
+            safeUrl = link.url;
+          }
+        } catch (e) {}
+        linkItem.href = safeUrl;
         linkItem.target = '_blank';
 
-        
-        const faviconUrl = link.favicon && link.favicon.startsWith('http') ? link.favicon : 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>';
+        const defaultFavicon = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>';
+        let faviconUrl = defaultFavicon;
+        if (link.favicon && (link.favicon.startsWith('http:') || link.favicon.startsWith('https:') || link.favicon.startsWith('data:'))) {
+          faviconUrl = link.favicon;
+        }
 
-        linkItem.innerHTML = `
-          <img src="${faviconUrl}" class="link-favicon" alt="icon" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>'">
-          <div class="link-info">
-            <span class="link-title">${link.title}</span>
-            <span class="link-url">${link.url}</span>
-          </div>
-        `;
+        const img = document.createElement('img');
+        img.className = 'link-favicon';
+        img.src = faviconUrl;
+        img.alt = 'icon';
+        img.onerror = function() {
+          this.src = defaultFavicon;
+        };
+
+        const linkInfo = document.createElement('div');
+        linkInfo.className = 'link-info';
+
+        const linkTitleSpan = document.createElement('span');
+        linkTitleSpan.className = 'link-title';
+        linkTitleSpan.textContent = link.title || 'Untitled';
+
+        const linkUrlSpan = document.createElement('span');
+        linkUrlSpan.className = 'link-url';
+        linkUrlSpan.textContent = link.url || '';
+
+        linkInfo.appendChild(linkTitleSpan);
+        linkInfo.appendChild(linkUrlSpan);
+
+        linkItem.appendChild(img);
+        linkItem.appendChild(linkInfo);
+        
         linkList.appendChild(linkItem);
       });
     });
