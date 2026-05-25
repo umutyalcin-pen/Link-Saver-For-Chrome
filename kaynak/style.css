@@ -359,5 +359,19 @@ button {
 
 .github-btn:hover {
   background-color: #2f363d;
+}
 
+.close-modal-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.close-modal-btn:hover {
+  color: var(--text-primary);
 }

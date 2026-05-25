@@ -20,7 +20,7 @@
 
 Araştırma yaparken veya çalışırken açık kalan sekmeler bilgisayarı yavaşlatır. Bu eklenti açık olan sekmelerinizi tek bir tıklamayla o günün tarihiyle yer imlerinize kaydeder ve sekmeleri kapatarak sistemin az kaynak kullanmasını sağlar.
 
--  **Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi klasörler halinde gruplar.
+- **Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi klasörler halinde gruplar.
 - **Performans Artışı:** Arşivlenen sekmeleri otomatik kapatarak RAM kullanımını azaltır.
 - **Kolay Geri Dönüş:** Günler sonra bile hangi gün hangi kaynakları incelediğinizi geçmiş klasöründen bulabilirsiniz.
 
@@ -49,8 +49,8 @@ It is a highly useful extension, especially for those who work with too many tab
 ---
 ## Ek Bilgiler / Additional Information
 
-* Eğer bir sayfayı kaydetten çıkarmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
-* If you want to unsave a page, simply click the save button again while on the same page.
+- Eğer bir sayfayı kaydetten çıkarmak istiyorsanız aynı sayfadayken tekrar kaydet kısmına tıklamanız yeterlidir.
+- If you want to unsave a page, simply click the save button again while on the same page.
 
 ---
 

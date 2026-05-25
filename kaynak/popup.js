@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const aboutModal = document.getElementById('about-modal');
   const githubBtn = document.getElementById('github-btn');
+  const closeModalBtn = document.getElementById('close-modal-btn');
 
   let currentFolderLinks = [];
 
@@ -19,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
   settingsBtn.addEventListener('click', () => {
     aboutModal.classList.remove('hidden');
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    aboutModal.classList.add('hidden');
   });
 
 
@@ -192,23 +197,49 @@ document.addEventListener('DOMContentLoaded', () => {
       const dates = Object.keys(items).sort().reverse(); 
 
       if (dates.length === 0) {
-        folderList.innerHTML = '<div style="text-align:center; color: var(--text-primary); padding: 20px;">No links saved yet.</div>';
+        const placeholder = document.createElement('div');
+        placeholder.style.textAlign = 'center';
+        placeholder.style.color = 'var(--text-primary)';
+        placeholder.style.padding = '20px';
+        placeholder.textContent = 'No links saved yet.';
+        folderList.appendChild(placeholder);
         return;
       }
 
+      const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+
       dates.forEach(date => {
+        if (!dateRegex.test(date)) return;
+
         const links = items[date];
         const folderItem = document.createElement('div');
         folderItem.className = 'folder-item';
-        folderItem.innerHTML = `
-          <div class="folder-info">
-            <span class="folder-date">${formatDate(date)}</span>
-            <span class="folder-count">${links.length} Link</span>
-          </div>
+
+        const folderInfo = document.createElement('div');
+        folderInfo.className = 'folder-info';
+
+        const folderDateSpan = document.createElement('span');
+        folderDateSpan.className = 'folder-date';
+        folderDateSpan.textContent = formatDate(date);
+
+        const folderCountSpan = document.createElement('span');
+        folderCountSpan.className = 'folder-count';
+        folderCountSpan.textContent = `${links.length} Link`;
+
+        folderInfo.appendChild(folderDateSpan);
+        folderInfo.appendChild(folderCountSpan);
+
+        folderItem.appendChild(folderInfo);
+
+        const svgString = `
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary);">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         `;
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(svgString, 'image/svg+xml');
+        const svgEl = svgDoc.documentElement;
+        folderItem.appendChild(svgEl);
 
         folderItem.addEventListener('click', () => openFolder(date, links));
         folderList.appendChild(folderItem);
