@@ -20,9 +20,9 @@
 
 Araştırma yaparken veya çalışırken açık kalan sekmeler bilgisayarı yavaşlatır. Bu eklenti açık olan sekmelerinizi tek bir tıklamayla o günün tarihiyle yer imlerinize kaydeder ve sekmeleri kapatarak sistemin az kaynak kullanmasını sağlar.
 
-- Tarihli Arşivleme:** Sekmeleri `2025-12-01 Arşivi` gibi klasörler halinde gruplar.
-- Performans Artışı:** Arşivlenen sekmeleri otomatik kapatarak RAM kullanımını azaltır.
-- Kolay Geri Dönüş:** Günler sonra bile hangi gün hangi kaynakları incelediğinizi geçmiş klasöründen bulabilirsiniz.
+/ Tarihli Arşivleme: Sekmeleri `2025-12-01 Arşivi` gibi klasörler halinde gruplar.
+/ Performans Artışı: Arşivlenen sekmeleri otomatik kapatarak RAM kullanımını azaltır.
+/ Kolay Geri Dönüş: Günler sonra bile hangi gün hangi kaynakları incelediğinizi geçmiş klasöründen bulabilirsiniz.
 
 Özellikle çok fazla sekmeyle çalışanlar için çok işe yarayacak birr eklentidir.
 
@@ -32,9 +32,9 @@ Araştırma yaparken veya çalışırken açık kalan sekmeler bilgisayarı yava
 
 Open tabs while researching or working slow down the computer. This extension saves your open tabs into your bookmarks with the current day's date with a single click, and closes the tabs to ensure the system uses fewer resources.
 
-- Dated Archives:** Organizes tabs into folders like `2025-12-01 Archive`.
-- Resource Friendly:** Closes archived tabs instantly to free up RAM.
-- Easy Retrieval:** Quickly find which resources you were reading on a specific day, even weeks later.
+/ Dated Archives: Organizes tabs into folders like `2025-12-01 Archive`.
+/ Resource Friendly: Closes archived tabs instantly to free up RAM.
+/ Easy Retrieval: Quickly find which resources you were reading on a specific day, even weeks later.
 
 It is a highly useful extension, especially for those who work with too many tabs.
 
