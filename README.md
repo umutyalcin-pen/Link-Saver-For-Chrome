@@ -9,7 +9,7 @@
 ## Eklenti ile alakalı ekran görüntüleri / Screenshots related to the extension
 
 <p align="center">
-    <img src="ekran-goruntuleri/b1.png" alt="Link Arşivcisi Ana Ekranı: Kaydetme ve Geçmiş" width="250" style="margin: 5px;"/>
+    <img src="ekran-goruntuleri/arayüzz.png" alt="Link Arşivcisi Ana Ekranı: Kaydetme ve Geçmiş" width="250" style="margin: 5px;"/>
     <img src="ekran-goruntuleri/c1.png" alt="Link Arşivcisi Detay: Günlük Link Listesi" width="250" style="margin: 5px;"/>
     <img src="ekran-goruntuleri/d1.png" alt="Link Arşivcisi Hakkında ve Veri Yönetimi" width="250" style="margin: 5px;"/>
 </p>
